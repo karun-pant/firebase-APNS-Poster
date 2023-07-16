@@ -1,5 +1,3 @@
-import json;
-
 const fs = require('fs');
 const jwt = require('jsonwebtoken');
 const http2 = require('node:http2');
