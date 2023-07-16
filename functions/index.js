@@ -1,3 +1,5 @@
+import json;
+
 const fs = require('fs');
 const jwt = require('jsonwebtoken');
 const http2 = require('node:http2');
@@ -6,10 +8,10 @@ const { initializeApp } = require('firebase-admin/app');
 const { onDocumentUpdated } = require("firebase-functions/v2/firestore");
 const { getFirestore } = require('firebase-admin/firestore');
 
-const teamID = "774AKCU6YJ"
-const keyID = "TRGV2FP4Q5"
-const p8FilePath = `./AuthKey_${keyID}.p8`
-const bundleID = "com.ios.karunpantpolls"
+const teamID = "YOUR_APPLE_TEAM_ID";
+const keyID = "YOUR_KEY_ID";
+const p8FilePath = `./AuthKey_${keyID}.p8`;
+const bundleID = "YOUR_BUNDLE_ID"
 
 initializeApp();
 const db = getFirestore();
